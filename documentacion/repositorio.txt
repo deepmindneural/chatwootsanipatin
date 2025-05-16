@@ -1,0 +1,11 @@
+echo "# chatwootsanipatin" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/deepmindneural/chatwootsanipatin.git
+git push -u origin main
+
+# Nota: Usar token de acceso personal para autenticación (no incluir el token directamente en archivos del repositorio)
+
+

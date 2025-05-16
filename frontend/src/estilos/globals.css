@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primario: #00B2B2;
+  --color-secundario: #3F51B5;
+}
+
+body {
+  @apply text-gris-800 bg-gris-100;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.contenedor {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.boton-primario {
+  @apply bg-primario hover:bg-primario-dark text-white font-medium py-2 px-4 rounded-md transition-colors;
+}
+
+.boton-secundario {
+  @apply bg-white border border-gris-300 hover:bg-gris-100 text-gris-800 font-medium py-2 px-4 rounded-md transition-colors;
+}
+
+.boton-peligro {
+  @apply bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded-md transition-colors;
+}
+
+.tarjeta {
+  @apply bg-white rounded-lg shadow-md p-6;
+}
+
+.encabezado-seccion {
+  @apply text-2xl font-bold text-gris-800 mb-4;
+}
+
+.texto-etiqueta {
+  @apply text-sm font-medium text-gris-500;
+}
+
+.campo-formulario {
+  @apply block w-full rounded-md border-gris-300 shadow-sm focus:ring-primario focus:border-primario;
+}
